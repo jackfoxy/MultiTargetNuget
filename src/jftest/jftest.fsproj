@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <!-- <TargetFramework>net45</TargetFramework> -->
+    <!-- <TargetFramework>net47</TargetFramework> -->
+    <!-- <TargetFrameworks>net45;net47</TargetFrameworks> -->
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+    <!-- <TargetFrameworks>net47;netstandard2.0</TargetFrameworks> -->
+    <RootNamespace>jftest</RootNamespace>
+    <AssemblyName>jftest</AssemblyName>
+    <Name>jftest</Name>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Prelude.fsi" />
+    <Compile Include="Prelude.fs" />
+    <Compile Include="Library.fs" />
+    <Compile Include="CommandLine.fsi" />
+    <Compile Include="CommandLine.fs" />
+    <None Include="Scripts\Script.fsx" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Argu" Version="4.2.0" />
+  </ItemGroup>
+
+</Project>
